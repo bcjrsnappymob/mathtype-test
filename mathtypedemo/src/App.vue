@@ -49,13 +49,9 @@ export default class App extends Vue {
   selectedQuestionText = ``;
 
   beforeCreate() {
-    Vue.prototype.tinymce = '';
     const script = document.createElement(`script`);
     script.src = "https://www.wiris.net/demo/plugins/app/WIRISplugins.js?viewer=image";
     document.head.appendChild(script);
-    window.onload = () => {
-      console.log(window.globalThis.tinymce);
-    };
   }
 
   mounted() {
