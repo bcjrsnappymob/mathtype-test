@@ -1,0 +1,81 @@
+.modalInternalContainer {
+    h4 {
+      font-size: 22px;
+    }
+    .contentContainer {
+      .radioContainer {
+        margin: 15px 0;
+        span {
+          font-size: 20px;
+        }
+      }
+    }
+    .buttonContainer {
+      margin-top: 40px;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      button {
+        margin-right: 20px;
+        font-size: 18px;
+        padding: 10px 20px;
+        min-height: 30px;
+        min-width: 100px;
+        text-align: center;
+      }
+      .cancelButton {
+        background-color: $lightgrey;
+      }
+      .createButton {
+        background-color: $lightblue;
+        color: white;
+      }
+    }
+  }
+
+.formButton {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    background-color: $darkblue;
+    min-height: 40px;
+    min-width: 120px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+    &:disabled {
+        opacity: 0.3;
+        cursor: disabled;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.generalTabContainer {
+  display: flex;
+  align-items: center;
+
+  .headlineContainer {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    :first-child,
+    :nth-child(2) {
+      margin-right: 30px;
+    }
+    .tabHeadline {
+      font-size: 30px;
+      font-weight: bold;
+      color: $lightgrey-2;
+
+      &.isActive {
+        color: black;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
