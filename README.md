@@ -1,7 +1,13 @@
 # mathtype-test
 
 ### Steps to run 
+
+### Working Mathtype Demo
 1. cd mathtypedemo && yarn
+2. yarn serve
+
+### Broken MathType Demo
+1. cd brokenmathtypedemo && yarn
 2. yarn serve
 
 ### References used:
